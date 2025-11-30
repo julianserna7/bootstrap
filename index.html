@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aunque siga brillando la luna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+
+        h1 {
+            font-family: "Righteous", sans-serif;
+            font-size: 48px;
+            color: #60a6b8;
+            text-shadow: 0 4px 0 #4e409b;
+        }
+
+        h4,
+        h5 {
+            font-weight: bold;
+
+        }
+
+        body {
+            background-image: url("img/fondo.jpg");
+        }
+
+        .container {
+            background-image: url("img/textura-marte.jpg");
+            font-family: "Montserrat", sans-serif;
+            box-shadow: 0 0 50px #df6633;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 4%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container px-4">
+        <h1 class="text-center p-4">AUNQUE SIGA BRILLANDO LA LUNA</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#tematica">Sobre la temática
+                                elegida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produccion">Proceso de producción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#codigo">Código en p5.js</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aventura-grafica">Aventura Gráfica Interactiva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row pt-5">
+            <div>
+                <div class="card">
+                    <div class="card-header text-center pt-3 pb-2">
+                        <h4 id="tematica">Sobre la temática elegida</h4>
+                    </div>
+                    <img src="img/tapa-cronicas-marcianas-1950.jpg" class="card-img-top img-fluid"
+                        alt="Sobrecubierta de la primera edición de Crónicas Marcianas">
+                    <div class="card-body">
+                        <p class="card-text">Crónicas marcianas es una serie de relatos del escritor Ray Bradbury
+                            publicada en 1950. Los relatos carecen de una línea argumental lineal fija, pero la
+                            referencia contextual y temporal es la misma en todos ellos: narra la llegada a Marte y la
+                            colonización del planeta por parte de los humanos. Nosotros elegimos, en particular, la cuarta expedición, titulada "Aunque siga brillando la luna". En el cuento ocurre que uno de los
+                            tripulantes de esa expedición, Spender, se rebela contra sus compañeros por la falta de
+                            respeto y la forma destructiva en que los humanos tratan las ruinas marcianas, llegando
+                            incluso a una violenta confrontación que termina con su muerte. El cuento critica la colonización, la apropiación cultural y el conflicto entre el respeto por otras civilizaciones y la mentalidad expansionista y destructiva de los humanos.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary col-8 mx-auto mb-3 p-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        ¿Quién es el autor?
+                    </button>
+
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="staticBackdropLabel">Ray Bradbury</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/bradbury.jpg" class="img-fluid d-block mx-auto pb-3"
+                                        alt="Ray Bradbury">
+                                    Nacido en Waukegan, Illinois, el 22 de agosto de 1920, Bradbury fue un ávido lector
+                                    y un
+                                    escritor autodidacta que no pudo asistir a la universidad por razones económicas. Su
+                                    formación provino principalmente de las bibliotecas públicas, cuyo valor defendió a
+                                    lo
+                                    largo de su vida. Comenzó a vender sus cuentos a revistas a principios de la década
+                                    de
+                                    1940 y se convirtió en escritor profesional en 1943. A lo largo de su extensa
+                                    carrera,
+                                    escribió casi 50 libros y cientos de cuentos, además de guiones para cine y
+                                    televisión,
+                                    incluyendo una colaboración en la adaptación de Moby Dick de John Huston. Murió en
+                                    Los
+                                    Ángeles el 5 de junio de 2012, a la edad de 91 años.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row pt-5">
+            <div>
+                <div class="card">
+                    <div class="card-header text-center pt-3 pb-2">
+                        <h4 id="produccion">Proceso de producción</h4>
+                    </div>
+                    <div>
+                        <div id="carousel1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card border-0">
+                                        <img src="img/diagrama.png" class="card-img-top" alt="Diagrama de la aventura gráfica interactiva">
+                                        <div class="card-body">
+                                            <p class="card-text">1. Empezamos realizando un diagrama en el cual
+                                                definimos la cantidad de pantallas y bifurcaciones que iba a tener la
+                                                aventura gráfica, detallando todos los posibles caminos con flechas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card border-0">
+                                        <img src="img/imagenes-IA.png" class="card-img-top" alt="Imágenes hechas con IA de la aventura gráfica interactiva">
+                                        <div class="card-body">
+                                            <p class="card-text">2. Una vez definido el diagrama, generamos con Gemini
+                                                todas las imágenes para cada escena.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div>
+                <div class="card">
+                    <div class="card-header text-center pt-3 pb-2">
+                        <h4 class="text-center" id="codigo">Código en p5.js</h4>
+                    </div>
+                    <div>
+                        <div id="carousel2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card border-0">
+                                        <img src="img/codigo1.jpg" class="card-img-top" alt="Imagen 1 del código">
+                                        <div class="card-body">
+                                            <p class="card-text">1. Primero declaramos todas las variables necesarias
+                                                para
+                                                manejar imágenes, sonidos, frases y el estado de la aventura gráfica.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card border-0">
+                                        <img src="img/codigo2.jpg" class="card-img-top" alt="Imagen 2 del código">
+                                        <div class="card-body">
+                                            <p class="card-text">2. Usamos la función preload() para cargar imágenes y
+                                                archivos
+                                                de
+                                                audio antes de que comience el programa. En setup() definimos el tamaño del lienzo, el estilo del texto y el volumen de musicaFondo. También iniciamos el loop de audio de fondo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <div class="card border-0">
+                                        <img src="img/codigo3.jpg" class="card-img-top" alt="Imagen 3 del código">
+                                        <div class="card-body">
+                                            <p class="card-text">3. El programa hace uso de una estructura condicional
+                                                para
+                                                determinar
+                                                qué imagen, texto y botones se muestran según el valor de la variable
+                                                estado.
+                                                Cada número representa una escena o decisión dentro de la aventura
+                                                gráfica.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card border-0">
+                                        <img src="img/codigo4.jpg" class="card-img-top" alt="Imagen 4 del código">
+                                        <div class="card-body">
+                                            <p class="card-text">4. La función mousePressed() verifica si el usuario
+                                                hizo click
+                                                sobre un botón. Si es así, cambia el estado según la opción
+                                                seleccionada.
+                                                Cada interacción reproduce un sonido para indicar que el click fue
+                                                registrado.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card border-0">
+                                        <img src="img/codigo5.jpg" class="card-img-top" alt="Imagen 5 del código">
+                                        <div class="card-body">
+                                            <p class="card-text">5. Para evitar repetir código, desarrollamos funciones
+                                                específicas: fondo() >> muestra la imagen y el texto correspondiente;
+                                                boton() >>
+                                                dibuja los botones interactivos; overMouse() >> detecta si el mouse está
+                                                sobre
+                                                un botón.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card border-0">
+                                        <img src="img/codigo6.jpg" class="card-img-top" alt="Imagen 6 del código">
+                                        <div class="card-body">
+                                            <p class="card-text">6. Por último, añadimos una función opcional para que
+                                                se pueda
+                                                parar
+                                                la música en cualquier momento apretando cualquier tecla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row pt-5">
+            <div>
+                <div class="card">
+                    <div class="card-header text-center pt-3 pb-2">
+                        <h4 id="aventura-grafica">Aventura Gráfica Interactiva</h4>
+                    </div>
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            Este es el resultado de toda la producción.
+                        </div>
+
+                        <button type="button" class="btn btn-primary col-8 mx-auto mb-3 p-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Hacé click acá para verlo
+                        </button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex justify-content-center align-items-center">
+                                        <iframe src="p5/index.html" width="650" height="490"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <h5 class="text-center p-4">Sitio web desarrollado por Julián Serna y Gerónimo Nivello - Comisión 1</h5>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
